@@ -1,0 +1,33 @@
+{
+  "name": "skylog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "framer-motion": "^12.34.3",
+    "howler": "^2.2.4",
+    "idb-keyval": "^6.2.2",
+    "next": "16.1.6",
+    "pixi.js": "^8.16.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/howler": "^2.2.12",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
