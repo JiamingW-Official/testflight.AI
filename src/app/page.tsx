@@ -9,6 +9,7 @@ import { RARITY_COLORS, RARITY_LABELS } from "@/lib/gameUtils";
 import { expForLevel } from "@/types";
 import GameCanvas from "@/components/game/GameCanvas";
 import PlanePanel from "@/components/ui/PlanePanel";
+import StoryCard from "@/components/ui/StoryCard";
 
 export default function Home() {
   useGameLoop();
@@ -171,6 +172,9 @@ export default function Home() {
 
       {/* ── Plane Detail Panel ── */}
       <PlanePanel />
+
+      {/* ── Passenger Story Overlay ── */}
+      <StoryCard />
     </>
   );
 }

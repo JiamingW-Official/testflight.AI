@@ -6,7 +6,9 @@
       "Bash(npm install:*)",
       "Bash(head:*)",
       "Bash(true:*)",
-      "Bash(cd /c/Users/Jwmon/OneDrive/文档/Github/testflight.AI && npx tsc --noEmit 2>&1)"
+      "Bash(cd /c/Users/Jwmon/OneDrive/文档/Github/testflight.AI && npx tsc --noEmit 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\Jwmon\\\\OneDrive\\\\文档\\\\Github\\\\testflight.AI\" && npx tsc --noEmit 2>&1)",
+      "Bash(curl:*)"
     ]
   }
 }

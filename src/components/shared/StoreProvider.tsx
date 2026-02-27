@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import { useGameStore } from "@/stores/gameStore";
 import { usePlaneStore } from "@/stores/planeStore";
 import { usePlayerStore } from "@/stores/playerStore";
+import { useStoryStore } from "@/stores/storyStore";
 
 const MIN_OFFLINE_FOR_REPORT = 5 * 60 * 1000; // 5 minutes
 
@@ -31,6 +32,9 @@ export default function StoreProvider({ children }: { children: React.ReactNode 
 
       // 3. Hydrate game state
       await useGameStore.getState().hydrate();
+
+      // 3.5 Hydrate story state
+      await useStoryStore.getState().hydrate();
 
       // 4. Calculate offline earnings
       const lastOnline = usePlayerStore.getState().lastOnline;
